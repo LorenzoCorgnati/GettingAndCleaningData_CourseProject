@@ -280,4 +280,4 @@ for (i in seq(2,length(colnames(meanStdSet))-1)) {
 finalSet <- finalSet[order(finalSet$subject, finalSet$activity),]
 
 # Save the final dataset to .txt file
-write.table(finalSet, "./finalSet.txt", sep="\t")
+write.table(finalSet, "./finalSet.txt", sep="\t", row.names=FALSE)
